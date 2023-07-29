@@ -1,7 +1,10 @@
 # JMBG
-A go library to parse the Serbian JMBG (Jedinstveni Matični Broj Građana), or UMCN (Unique Master Citizen Number)
 
-![go test](https://github.com/dusnm/jmbg/actions/workflows/test.yml/badge.svg?branch=main)
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://github.com/dusnm/jmbg/blob/main/LICENSE)
+![Tests](https://github.com/dusnm/jmbg/actions/workflows/test.yml/badge.svg?branch=main)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dusnm/jmbg)](https://goreportcard.com/report/github.com/dusnm/jmbg)
+
+A go library to parse the Serbian JMBG (Jedinstveni Matični Broj Građana), or UMCN (Unique Master Citizen Number)
 
 ## Explanation
 The number that the government of Serbia assigns to its citizens is not random and is made up of the following information:

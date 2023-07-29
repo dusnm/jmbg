@@ -38,11 +38,11 @@ func New(jmbg string) (JMBG, error) {
 	}
 
 	return JMBG{
-		Number:   jmbg,
-		Digits:   digits,
-        DateOfBirth: date,
-		Region:   region,
-		Sex:      sex.New(digits),
-		Checksum: checksum.New(digits),
+		Number:      jmbg,
+		Digits:      digits,
+		DateOfBirth: date,
+		Region:      region,
+		Sex:         sex.New(digits),
+		Checksum:    checksum.New(digits),
 	}, nil
 }

@@ -14,9 +14,9 @@ func (e InvalidYearDigitError) Error() string {
 }
 
 func New(digits [13]uint) (time.Time, error) {
-	var year uint = 0
+	var year uint
 
-    // This is ugly, naive and stupid, but it must be done
+	// This is ugly, naive and stupid, but it must be done
 	switch digits[4] {
 	case 0:
 		year = 2000 + digits[5]*10 + digits[6]

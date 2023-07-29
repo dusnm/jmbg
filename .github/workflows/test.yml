@@ -1,4 +1,4 @@
-name: test project with the go cli
+name: Tests
 
 on: [push]
 

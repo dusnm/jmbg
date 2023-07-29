@@ -50,17 +50,17 @@ func TestShouldParseDate(t *testing.T) {
 }
 
 func TestShouldFailWithInvalidYearDigitError(t *testing.T) {
-    t.Parallel()
+	t.Parallel()
 
-    // arrange
-    assert := require.New(t)
+	// arrange
+	assert := require.New(t)
 	digits := [13]uint{0, 1, 0, 1, 4, 9, 7, 8, 0, 5, 0, 1, 2}
 
-    // act
-    date, err := New(digits)
+	// act
+	date, err := New(digits)
 
-    // assert
-    assert.Error(err)
-    assert.ErrorIs(err, InvalidYearDigitError{})
-    assert.Equal(time.Time{}, date)
+	// assert
+	assert.Error(err)
+	assert.ErrorIs(err, InvalidYearDigitError{})
+	assert.Equal(time.Time{}, date)
 }

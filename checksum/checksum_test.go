@@ -56,7 +56,7 @@ func TestChecksumShouldBeCalculatedAndInvalid(t *testing.T) {
 	// act
 	csum := New(digits)
 
-    // assert
+	// assert
 	assert.False(csum.Valid)
 	assert.Equal(expected, csum.Value)
 }
