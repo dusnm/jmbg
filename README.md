@@ -34,21 +34,21 @@ This library attempts to make it simple to extract this information out of a str
 package main
 
 import (
-    "fmt"
-    "log"
+	"fmt"
+	"log"
 
-    "github.com/dusnm/jmbg"
+	"github.com/dusnm/jmbg"
 )
 
 func main() {
-    number := "0101000805018"
+	number := "0101000805018"
 
-    data, err := jmbg.New(number)
-    if err != nil {
-        log.Fatal(err)
-    }
+	data, err := jmbg.New(number)
+	if err != nil {
+		log.Fatal(err)
+	}
 
-    fmt.Println(data)
+	fmt.Println(data)
 }
 ```
 
