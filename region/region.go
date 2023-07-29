@@ -43,12 +43,12 @@ type (
 		Name Name
 	}
 
-	InvalidCode struct {
+	InvalidCodeError struct {
 		input uint
 	}
 )
 
-func (e InvalidCode) Error() string {
+func (e InvalidCodeError) Error() string {
 	return fmt.Sprintf(
 		"invalid region code %d, no region was found using it",
 		e.input,
@@ -162,7 +162,7 @@ func New(digits [13]uint) (Region, error) {
 
 	region, exists := regions[code]
 	if !exists {
-		return Region{}, InvalidCode{input: code}
+		return Region{}, InvalidCodeError{input: code}
 	}
 
 	return Region{

@@ -19,7 +19,7 @@ func TestShouldFailWhenNoRegionFoundForCode(t *testing.T) {
 
 	// assert
 	assert.Error(err)
-	assert.ErrorIs(err, InvalidCode{input: code})
+	assert.ErrorIs(err, InvalidCodeError{input: code})
 	assert.Equal(region, Region{})
 }
 
