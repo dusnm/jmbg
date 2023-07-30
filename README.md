@@ -1,6 +1,7 @@
 # JMBG
 
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://github.com/dusnm/jmbg/blob/main/LICENSE)
+![semver](https://img.shields.io/badge/semver-0.1.0-blue)
 ![Tests](https://github.com/dusnm/jmbg/actions/workflows/test.yml/badge.svg?branch=main)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dusnm/jmbg)](https://goreportcard.com/report/github.com/dusnm/jmbg)
 
