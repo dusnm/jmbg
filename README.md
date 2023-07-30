@@ -29,6 +29,15 @@ type (
 
 This library attempts to make it simple to extract this information out of a string representation of this number.
 
+## Installation
+Make sure you have Go installed ([download here](https://go.dev/dl/)).
+
+Initialize your project in a directory of your choice and run `go mod init github.com/your-username/your-repo-name`.
+Then install the package with the `go get` command:
+```shell
+go get -u github.com/dusnm/jmbg@v0.1.0
+```
+
 ## Basic usage
 ```go
 package main
