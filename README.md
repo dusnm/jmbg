@@ -1,7 +1,7 @@
 # JMBG
 
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://github.com/dusnm/jmbg/blob/main/LICENSE)
-![semver](https://img.shields.io/badge/semver-0.1.0-blue)
+![semver](https://img.shields.io/badge/semver-1.0.0-blue)
 ![Tests](https://github.com/dusnm/jmbg/actions/workflows/test.yml/badge.svg?branch=main)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dusnm/jmbg)](https://goreportcard.com/report/github.com/dusnm/jmbg)
 
@@ -36,7 +36,7 @@ Make sure you have Go installed ([download here](https://go.dev/dl/)).
 Initialize your project in a directory of your choice and run `go mod init github.com/your-username/your-repo-name`.
 Then install the package with the `go get` command:
 ```shell
-go get -u github.com/dusnm/jmbg@v0.1.0
+go get -u github.com/dusnm/jmbg@v1.0.0
 ```
 
 ## Basic usage
