@@ -22,8 +22,8 @@ func TestShouldParseSex(t *testing.T) {
 			expected: Sex{
 				Code: MALE,
 				Name: Name{
-					Cyrilic: "мушки",
-					Latin:   "muški",
+					Cyrillic: "мушки",
+					Latin:    "muški",
 				},
 			},
 		},
@@ -33,8 +33,8 @@ func TestShouldParseSex(t *testing.T) {
 			expected: Sex{
 				Code: FEMALE,
 				Name: Name{
-					Cyrilic: "женски",
-					Latin:   "ženski",
+					Cyrillic: "женски",
+					Latin:    "ženski",
 				},
 			},
 		},

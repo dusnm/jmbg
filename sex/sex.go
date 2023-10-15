@@ -7,13 +7,13 @@ const (
 
 type (
 	Name struct {
-		Cyrilic string
-		Latin   string
+		Cyrillic string `json:"cyrillic"`
+		Latin    string `json:"latin"`
 	}
 
 	Sex struct {
-		Code int
-		Name Name
+		Code int  `json:"code"`
+		Name Name `json:"name"`
 	}
 )
 
@@ -23,8 +23,8 @@ func New(digits [13]uint) Sex {
 		return Sex{
 			Code: MALE,
 			Name: Name{
-				Cyrilic: "мушки",
-				Latin:   "muški",
+				Cyrillic: "мушки",
+				Latin:    "muški",
 			},
 		}
 	}
@@ -32,8 +32,8 @@ func New(digits [13]uint) Sex {
 	return Sex{
 		Code: FEMALE,
 		Name: Name{
-			Cyrilic: "женски",
-			Latin:   "ženski",
+			Cyrillic: "женски",
+			Latin:    "ženski",
 		},
 	}
 }

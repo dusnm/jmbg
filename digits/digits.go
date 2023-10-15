@@ -30,12 +30,12 @@ func New(jmbg string) ([13]uint, error) {
 	}
 
 	digits := make([]uint, 13)
-	for i, rune := range runes {
-		if !unicode.IsDigit(rune) {
-			return [13]uint{}, InvalidDigitError{input: rune}
+	for i, r := range runes {
+		if !unicode.IsDigit(r) {
+			return [13]uint{}, InvalidDigitError{input: r}
 		}
 
-		digits[i] = uint(rune - '0')
+		digits[i] = uint(r - '0')
 	}
 
 	return [13]uint(digits), nil

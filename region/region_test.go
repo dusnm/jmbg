@@ -41,8 +41,8 @@ func TestShouldPassWhenRegionFoundForCode(t *testing.T) {
 		Region{
 			Code: code,
 			Name: Name{
-				Cyrilic: "Београд",
-				Latin:   "Beograd",
+				Cyrillic: "Београд",
+				Latin:    "Beograd",
 			},
 		},
 	)

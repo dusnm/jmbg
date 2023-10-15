@@ -30,15 +30,15 @@ func TestShouldParseJmbg(t *testing.T) {
 		Region: region.Region{
 			Code: region.NSD,
 			Name: region.Name{
-				Cyrilic: "Нови Сад",
-				Latin:   "Novi Sad",
+				Cyrillic: "Нови Сад",
+				Latin:    "Novi Sad",
 			},
 		},
 		Sex: sex.Sex{
 			Code: sex.FEMALE,
 			Name: sex.Name{
-				Cyrilic: "женски",
-				Latin:   "ženski",
+				Cyrillic: "женски",
+				Latin:    "ženski",
 			},
 		},
 		Checksum: checksum.Checksum{

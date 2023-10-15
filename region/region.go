@@ -34,13 +34,13 @@ const (
 
 type (
 	Name struct {
-		Cyrilic string
-		Latin   string
+		Cyrillic string `json:"cyrillic"`
+		Latin    string `json:"latin"`
 	}
 
 	Region struct {
-		Code uint
-		Name Name
+		Code uint `json:"code"`
+		Name Name `json:"name"`
 	}
 
 	InvalidCodeError struct {
@@ -168,8 +168,8 @@ func New(digits [13]uint) (Region, error) {
 	return Region{
 		Code: code,
 		Name: Name{
-			Cyrilic: region[0],
-			Latin:   region[1],
+			Cyrillic: region[0],
+			Latin:    region[1],
 		},
 	}, nil
 }

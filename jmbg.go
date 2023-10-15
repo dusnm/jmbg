@@ -12,37 +12,37 @@ import (
 
 type (
 	JMBG struct {
-		Number      string
-		Digits      [13]uint
-		DateOfBirth time.Time
-		Region      region.Region
-		Sex         sex.Sex
-		Checksum    checksum.Checksum
+		Number      string            `json:"number"`
+		Digits      [13]uint          `json:"digits"`
+		DateOfBirth time.Time         `json:"date_of_birth"`
+		Region      region.Region     `json:"region"`
+		Sex         sex.Sex           `json:"sex"`
+		Checksum    checksum.Checksum `json:"checksum"`
 	}
 )
 
 func New(jmbg string) (JMBG, error) {
-	digits, err := digits.New(jmbg)
+	d, err := digits.New(jmbg)
 	if err != nil {
 		return JMBG{}, err
 	}
 
-	date, err := dob.New(digits)
+	date, err := dob.New(d)
 	if err != nil {
 		return JMBG{}, err
 	}
 
-	region, err := region.New(digits)
+	r, err := region.New(d)
 	if err != nil {
 		return JMBG{}, err
 	}
 
 	return JMBG{
 		Number:      jmbg,
-		Digits:      digits,
+		Digits:      d,
 		DateOfBirth: date,
-		Region:      region,
-		Sex:         sex.New(digits),
-		Checksum:    checksum.New(digits),
+		Region:      r,
+		Sex:         sex.New(d),
+		Checksum:    checksum.New(d),
 	}, nil
 }
